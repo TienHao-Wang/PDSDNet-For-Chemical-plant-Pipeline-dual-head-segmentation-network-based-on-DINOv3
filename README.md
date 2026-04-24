@@ -1,4 +1,4 @@
-# PDSDNet-For-Chemical-plant-Pipeline-dual-head-segmentation-network-based-on-DINOv3
+# PDSDNet: For Chemical plant Pipeline Dual-head-Segmentation Network-based-on-DINOv3
 This network is designed specifically for pipeline extraction within chemical industrial parks and can also be used for road extraction. Due to file size and weight limitations, the full code for this project, as well as the optimal training weights for PDSDNet and the DINOv3 weights, can be downloaded from this link: https://pan.baidu.com/s/1dBpeJGFPac6CpmOgzpJ0sQ?pwd=88xg. ⚠️⚠️⚠️Please note that if you download the DINOv3 weights from this link, you must provide proper citations to acknowledge the original authors of DINOv3!⚠️⚠️⚠️
 
 ## PDSDNet OverView

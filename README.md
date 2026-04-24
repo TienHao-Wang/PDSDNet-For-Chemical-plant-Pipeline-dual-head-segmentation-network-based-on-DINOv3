@@ -51,4 +51,7 @@ Please note that this experiment uses pre-trained weights from Meta’s DINOv3, 
 ```
 
 ## Citing PDSDNet
-If you find this repository useful, please consider giving a star :star:~ :t-rex:
+If you find this repository useful, please consider giving a star :star:~ and citing :t-rex: 🐁:
+'''
+The paper has not yet been published.....TAT
+'''

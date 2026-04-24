@@ -1,5 +1,5 @@
 # PDSDNet-For-Chemical-plant-Pipeline-dual-head-segmentation-network-based-on-DINOv3
-This network is designed specifically for pipeline extraction within chemical industrial parks and can also be used for road extraction.
+This network is designed specifically for pipeline extraction within chemical industrial parks and can also be used for road extraction. Due to file size and weight limitations, the full code for this project, as well as the optimal training weights for PDSDNet and the DINOv3 weights, can be downloaded from this link: https://pan.baidu.com/s/1dBpeJGFPac6CpmOgzpJ0sQ?pwd=88xg. ⚠️⚠️⚠️Please note that if you download the DINOv3 weights from this link, you must provide proper citations to acknowledge the original authors of DINOv3!⚠️⚠️⚠️
 
 ## PDSDNet OverView
 The overall network architecture of the method proposed in this paper (\ref{fig:fig2}) uses the DINOv3 ViT-L model, trained on the SAT493M dataset, as the backbone network. The model’s parameters are frozen, eliminating the need for fine-tuning, and it is directly employed as a hierarchical feature extractor. For an input image $I \in \mathbb{R}^{3 \times H \times W}$, we extract intermediate feature maps from the 7th, 15th, and 23rd Transformer layers of the ViT-L encoder, respectively. These multi-level representations simultaneously capture both local textural details and global semantic information. First, the features from the 23rd layer, $\mathbf{F}_{23} \in \mathbb{R}^{1024 \times \frac{H} {16} \times \frac{W}{16}}$ is projected via a $1\times 1$ convolution and spatially downsampled to form the base feature $\mathbf{p}_5 \in \mathbb{R}^{256 \times \frac{H}{32} \times \frac{W}{32}}$. Subsequently, through a series of additional $1\times 1$ convolutions and bilinear upsampling operations, a multi-scale feature pyramid $\{\mathbf{p}_2, \mathbf{p}_3, \mathbf{p}_4, \mathbf{p}_5\}$ with spatial dimensions of $\frac{H}{4}$, $\frac{H}{8}$, $\frac{H}{16}$, and $\frac{H}{32}$, respectively, and 256 channels each.
@@ -36,7 +36,7 @@ Use `evaluate.py` to perform a comprehensive accuracy evaluation of the inferenc
 ## Data Availability
 Unfortunately, due to project and research group requirements, we cannot make the entire dataset publicly available; however, we will still provide a portion of the dataset for reference. The download link is: https://pan.baidu.com/s/1GMqBjMAb71xKUCBhnvGo7Q?pwd=ttkk
 
-## ⚠Notes⚠
+## ⚠️⚠️⚠️Notes⚠️⚠️⚠️
 Please note that this experiment uses pre-trained weights from Meta’s DINOv3, which were trained on the SAT493M dataset. If you use the network built in this experiment or download the DINOv3 weights from here, please be sure to cite the source：
 ```
 @misc{simeoni2025dinov3,

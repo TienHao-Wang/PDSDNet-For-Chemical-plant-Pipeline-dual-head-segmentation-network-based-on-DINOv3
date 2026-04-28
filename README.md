@@ -34,7 +34,7 @@ Examples：[MeishanGF2cj_tile_00873.tif](https://github.com/user-attachments/fil
 Use `evaluate.py` to perform a comprehensive accuracy evaluation of the inference results. Simply set the test set path and the output path for the inference results, then click “Run.” In addition to the accuracy score, the console will also display the ALPS, Connectivity, and Completeness metrics.
 
 ## Experimental Results
-Table~\ref{tab:comparison} presents the comparison results of six evaluation metrics for each model on the test set.
+Table presents the comparison results of six evaluation metrics for each model on the test set.
 |Model | Precision | Recall | F1-Score | FIoU | MIoU | ALPS |
 | ---- | ---- | ---- | ---- | ---- | ---- | ---- |
 |U-Net | 0.7944 | 0.7083 | 0.7475 | 0.5968 | 0.7974 | 0.3917 |

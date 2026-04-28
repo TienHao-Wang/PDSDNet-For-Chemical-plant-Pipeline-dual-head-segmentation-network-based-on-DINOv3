@@ -33,6 +33,12 @@ Examples：[MeishanGF2cj_tile_00873.tif](https://github.com/user-attachments/fil
 ## Evaluate
 Use `evaluate.py` to perform a comprehensive accuracy evaluation of the inference results. Simply set the test set path and the output path for the inference results, then click “Run.” In addition to the accuracy score, the console will also display the ALPS, Connectivity, and Completeness metrics.
 
+## Experimental Results
+Figure shows the pipeline extraction results of PDSDNet in typical local areas of the four chemical industrial parks, where the blue regions represent the pipeline masks predicted by the model.
+
+
+
+
 ## Data Availability
 Unfortunately, due to project and research group requirements, we cannot make the entire dataset publicly available; however, we will still provide a portion of the dataset for reference. The download link is: https://pan.baidu.com/s/1GMqBjMAb71xKUCBhnvGo7Q?pwd=ttkk
 

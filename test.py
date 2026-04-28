@@ -5,9 +5,7 @@ from tqdm import tqdm
 from PIL import Image
 from torch.utils.data import DataLoader
 import torch.nn.functional as F
-
-# 导入你的模块（请确保 model4 路径正确）
-from DOSOtest.model6 import build_model
+from PDSDNet import build_model
 from dataset import PipelineDataset, get_transforms
 
 
@@ -53,7 +51,6 @@ def test_and_predict_global():
     total_fn = 0
     total_tn = 0
 
-    print(f"载入权重 Epoch: {checkpoint.get('epoch', 'N/A')}, 训练时最高 IoU: {checkpoint.get('best_iou', 'N/A')}")
     print(f"开始全局像素评估，样本总数: {len(test_dataset)}")
 
     # ---------- 4. 推理与统计循环 ----------
